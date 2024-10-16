@@ -21,7 +21,7 @@
   },
   "homepage": "https://github.com/okraHQ/nebula-npm#readme",
   "author": "Laniran Peter <laniranpeter@gmail.com>",
-  "license": "ISC",
+  "license": "MIT",
   "keywords": [
     "API",
     "Node",
