@@ -14,12 +14,12 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/okraHQ/nebula-npm"
+    "url": "git+https://github.com/okraHQ/nebula-client"
   },
   "bugs": {
-    "url": "https://github.com/okraHQ/nebula-npm/issues"
+    "url": "https://github.com/okraHQ/nebula-client/issues"
   },
-  "homepage": "https://github.com/okraHQ/nebula-npm#readme",
+  "homepage": "https://github.com/okraHQ/nebula-client#readme",
   "author": "Laniran Peter <laniranpeter@gmail.com>",
   "license": "MIT",
   "keywords": [

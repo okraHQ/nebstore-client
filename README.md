@@ -161,9 +161,8 @@ console.log(response)
 
 ```js
 // Deletes a specific object from a bucket.
-const response = await nebStore
-  .deleteObject('bucketName', 'objectKey')
-  .console.log(response)
+const response = await nebStore.deleteObject('bucketName', 'objectKey')
+console.log(response)
 ```
 
 **Parameters**
