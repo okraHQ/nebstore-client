@@ -9,7 +9,6 @@
     "outDir": "./dist",
     "forceConsistentCasingInFileNames": true,
     "allowSyntheticDefaultImports": true,
-    "sourceMap": true,
     "strict": true,
     "baseUrl": "./",
     "incremental": true,

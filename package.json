@@ -2,7 +2,7 @@
   "name": "nebula-client",
   "version": "1.0.0",
   "description": "Nebula client node package",
-  "main": "index.js",
+  "main": "dist/index.js",
   "scripts": {
     "prepare": "husky",
     "prepublishOnly": "npm run build",
