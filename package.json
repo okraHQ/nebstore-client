@@ -1,5 +1,5 @@
 {
-  "name": "nebula-client",
+  "name": "nebstore-client",
   "version": "1.0.0",
   "description": "Nebula client node package",
   "main": "dist/index.js",
@@ -14,12 +14,12 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/okraHQ/nebula-client"
+    "url": "git+https://github.com/okraHQ/nebstore-client"
   },
   "bugs": {
-    "url": "https://github.com/okraHQ/nebula-client/issues"
+    "url": "https://github.com/okraHQ/nebstore-client/issues"
   },
-  "homepage": "https://github.com/okraHQ/nebula-client#readme",
+  "homepage": "https://github.com/okraHQ/nebstore-client#readme",
   "author": "Laniran Peter <laniranpeter@gmail.com>",
   "license": "MIT",
   "keywords": [

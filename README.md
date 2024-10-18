@@ -1,6 +1,6 @@
-# **Nebula Client**
+# **NebStore Client**
 
-`Nebula Client` is a JavaScript-based client that provides an easy-to-use interface for managing cloud storage services with `NebStore`. It enables you to create, list, and manage buckets and objects with simple method calls.
+`Nebstore Client` is a JavaScript-based client that provides an easy-to-use interface for managing cloud storage services with `NebStore`. It enables you to create, list, and manage buckets and objects with simple method calls.
 
 ## **Features**
 
@@ -16,17 +16,17 @@ You can install the package using **npm** or **yarn**.
 ### **Using npm**
 
 ```bash
-npm install nebula-client
+npm install nebstore-client
 ```
 
 using yarn
 
 ```bash
-yarn add nebula-client
+yarn add nebstore-client
 ```
 
 ```js
-import { NebStore } from 'nebula-client'
+import { NebStore } from 'nebstore-client'
 const nebStore = new NebStore('your-api-token')
 ```
 
