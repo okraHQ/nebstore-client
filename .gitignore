@@ -25,3 +25,5 @@ yarn.lock
 /dump
 
 /dist
+
+tsconfig.tsbuildinfo

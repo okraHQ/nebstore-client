@@ -4,3 +4,5 @@
 /dump
 /build
 yarn.lock
+tsconfig.tsbuildinfo
+.husky

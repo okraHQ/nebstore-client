@@ -20,5 +20,5 @@
     "useUnknownInCatchVariables": false,
     "declaration": true,
   },
-  "exclude": ["dump/**/*.ts"]
+  "exclude": ["dump/**/*.ts", "dist"]
 }
