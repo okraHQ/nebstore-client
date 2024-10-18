@@ -1,1 +1,1 @@
-export const Something = ()=>{}
+export * from './service/bucket/BucketService'
