@@ -4,12 +4,11 @@
   "description": "Nebula client node package",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
     "prepare": "husky"
   },
   "lint-staged": {
-    "src/**/*.(ts|tsx|js|jsx)": [
-        "prettier --write --ignore-unknown"
+    "dump/**/*.{ts, js}": [
+        "prettier --write"
     ]
   },
   "repository": {
