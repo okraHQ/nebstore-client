@@ -9,11 +9,11 @@ import {
   Pagination,
 } from './types'
 
-export class BucketService {
+export class StorageService {
   private client: ApiClient
 
-  constructor(client: ApiClient) {
-    this.client = client
+  constructor(apiToken: string) {
+    this.client = new ApiClient(apiToken)
   }
 
   public async listBuckets(params: ListParams) {
@@ -42,7 +42,11 @@ export class BucketService {
     return this.client.get<ApiResponse<Bucket>>(`/buckets/${bucketName}`)
   }
 
-  public async uploadObject(bucketName: string, objectKey: string, file: any) {
+  public async uploadObject(
+    bucketName: string,
+    objectKey: string,
+    file: Buffer | Blob | ReadableStream
+  ) {
     const formData = new FormData()
     formData.append('object', file)
     formData.append('objectKey', objectKey)

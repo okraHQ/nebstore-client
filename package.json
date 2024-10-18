@@ -4,12 +4,13 @@
   "description": "Nebula client node package",
   "main": "index.js",
   "scripts": {
-    "prepare": "husky"
+    "prepare": "husky",
+    "prepublishOnly": "npm run build",
+    "build": "tsc"
   },
   "lint-staged": {
-    "src/**/*.{ts, js}": [
-      "prettier --write"
-    ]
+    "src/**/*.{ts, js}": "prettier --write",
+    "README.md": "prettier --write"
   },
   "repository": {
     "type": "git",
@@ -32,6 +33,7 @@
   ],
   "type": "module",
   "devDependencies": {
+    "@types/node": "^22.7.6",
     "husky": "^9.1.6",
     "lint-staged": "^15.2.10",
     "prettier": "^3.3.3",

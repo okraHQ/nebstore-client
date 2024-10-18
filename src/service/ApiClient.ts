@@ -1,6 +1,6 @@
 import axios, { Method } from 'axios'
 import FormData from 'form-data'
-import { ApiResponse } from './bucket/types'
+import { ApiResponse } from './storage/types'
 
 interface RequestOptions {
   method: Method

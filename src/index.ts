@@ -1,1 +1,1 @@
-export * from './service/bucket/BucketService'
+export * as NebStore from './service/storage/StorageService'
