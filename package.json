@@ -7,7 +7,7 @@
     "prepare": "husky"
   },
   "lint-staged": {
-    "test/**/*.{ts, js}": [
+    "src/**/*.{ts, js}": [
       "prettier --write"
     ]
   },
