@@ -1,6 +1,6 @@
 {
   "name": "nebstore-client",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Nebula client node package",
   "main": "dist/index.js",
   "scripts": {
