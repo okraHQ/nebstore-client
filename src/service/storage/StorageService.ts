@@ -9,7 +9,7 @@ import {
   Pagination,
 } from './types'
 
-export class StorageService {
+export default class StorageService {
   private client: ApiClient
 
   constructor(apiToken: string) {

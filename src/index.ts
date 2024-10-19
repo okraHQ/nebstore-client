@@ -1,1 +1,1 @@
-export * as NebStore from './service/storage/StorageService'
+export { default as NebStore } from './service/storage/StorageService'
