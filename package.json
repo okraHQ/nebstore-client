@@ -4,7 +4,7 @@
   "description": "Nebula client node package",
   "main": "dist/cjs/index.js",
   "module": "dist/esm/index.js",  
-  "types": "dist/index.d.ts", 
+  "types": "dist/types/index.d.ts", 
   "scripts": {
     "prepare": "husky",
     "prepublishOnly": "npm run build",
