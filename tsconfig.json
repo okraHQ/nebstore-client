@@ -1,8 +1,8 @@
 {
   "compilerOptions": {
-    "target": "ES5",
-    "lib": ["ES5", "ES2015", "ES2016", "ES2018", "ES2021"],
-    "module": "commonjs",
+    "target": "ES2018",
+    "lib": ["ES2015", "ES2016", "ES2018", "ES2021"],
+    "module": "ESNext",
     "esModuleInterop": true,
     "moduleResolution": "node",
     "rootDir": "./src",
@@ -10,13 +10,9 @@
     "forceConsistentCasingInFileNames": true,
     "allowSyntheticDefaultImports": true,
     "strict": true,
-    "baseUrl": "./",
     "incremental": true,
     "skipLibCheck": true,
-    "strictNullChecks": false,
     "noImplicitAny": false,
-    "strictBindCallApply": false,
-    "useUnknownInCatchVariables": false,
     "declaration": true,
   },
   "exclude": ["dump/**/*.ts", "dist"]
