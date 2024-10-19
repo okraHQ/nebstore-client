@@ -9,7 +9,6 @@
     "forceConsistentCasingInFileNames": true,
     "allowSyntheticDefaultImports": true,
     "strict": true,
-    "incremental": true,
     "skipLibCheck": true,
     "noImplicitAny": false,
     "declarationDir": "./dist/types",
