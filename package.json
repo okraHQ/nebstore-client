@@ -1,6 +1,6 @@
 {
   "name": "nebstore-client",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "Nebula client node package",
   "main": "dist/cjs/index.js",
   "module": "dist/esm/index.js",  
@@ -35,7 +35,6 @@
   "files": [
     "dist"
   ],
-  "type": "module",
   "devDependencies": {
     "@types/node": "^22.7.6",
     "husky": "^9.1.6",
