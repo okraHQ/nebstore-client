@@ -1,14 +1,16 @@
 export interface ListParams {
-  page: number
-  limit: number
-  startDate: Date
-  endDate: Date
+  page?: number
+  limit?: number
+  startDate?: Date
+  endDate?: Date
 }
 export interface Bucket {
-  createdBy: {
-    userId: string
-    fullName: string
-  }
+  createdBy:
+    | {
+        userId: string
+        fullName: string
+      }
+    | string
   bucketName: string
   location: string
   createdAt: string
@@ -17,10 +19,12 @@ export interface Bucket {
 }
 
 export interface IObject {
-  createdBy: {
-    userId: string
-    fullName: string
-  }
+  createdBy:
+    | {
+        userId: string
+        fullName: string
+      }
+    | string
   objectKey: string
   location: string
   createdAt: string

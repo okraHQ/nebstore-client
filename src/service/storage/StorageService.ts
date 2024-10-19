@@ -16,14 +16,14 @@ export default class StorageService {
     this.client = new ApiClient(apiToken)
   }
 
-  public async listBuckets(params: ListParams) {
+  public async listBuckets(params?: ListParams) {
     return this.client.post<ApiResponse<{ docs: Bucket[]; pagination: Pagination }>>(
       '/buckets/list',
       params
     )
   }
 
-  public async listObjects(bucketName: string, params: ListParams) {
+  public async listObjects(bucketName: string, params?: ListParams) {
     return this.client.post<ApiResponse<{ docs: IObject[]; pagination: Pagination }>>(
       `/buckets/${bucketName}/list`,
       params
