@@ -135,7 +135,7 @@ const response = await nebStore.getObject('bucketName', 'objectKey').console.log
 const fs = require('fs')
 const file = fs.createReadStream('path/to/file.txt')
 
-const response = await nebStoreuploadObject('my-new-bucket', 'my-object-key', file)
+const response = await nebStore.uploadObject('my-new-bucket', 'my-object-key', file)
 console.log(response)
 ```
 
@@ -143,7 +143,7 @@ console.log(response)
 
 - bucketName: The name of the bucket.
 - objectKey: The key or name to assign to the object.
-- file: The file to be uploaded (as FormData).
+- file: The file to be uploaded (as Buffer, Blob, or ReadableStream).
 
 #### Delete bucket
 
