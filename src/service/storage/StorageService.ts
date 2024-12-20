@@ -1,7 +1,20 @@
 import FormData from 'form-data'
 import { ApiClient } from '../ApiClient'
 import { Bucket, CreateBucket, IObject, ListParams, Pagination } from './types'
+import { Readable } from 'stream'
+import { Blob } from 'buffer'
 
+const validateFileType = (file: any) => {
+  if (Buffer.isBuffer(file)) {
+    return true
+  } else if (file instanceof Blob) {
+    return true
+  } else if (file instanceof Readable) {
+    return true
+  } else {
+    return false
+  }
+}
 export default class StorageService {
   private client: ApiClient
 
@@ -40,6 +53,13 @@ export default class StorageService {
     objectKey: string,
     file: Buffer | Blob | ReadableStream
   ) {
+    const isCorrectFile = file && validateFileType(file)
+    if (!isCorrectFile) {
+      return {
+        success: false,
+        message: 'Invalid file type: accepted types [Blob, Buffer, ReadableStream]',
+      }
+    }
     const formData = new FormData()
     formData.append('object', file)
     formData.append('objectKey', objectKey)
